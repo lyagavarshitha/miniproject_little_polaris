@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f8fbff;
+}
+
+* {
+  box-sizing: border-box;
+}
+@keyframes floatBalloon {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-balloon {
+  animation: floatBalloon 3s ease-in-out infinite;
+}
